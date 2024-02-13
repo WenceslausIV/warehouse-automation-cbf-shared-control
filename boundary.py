@@ -25,7 +25,7 @@ from geometry_msgs.msg import TransformStamped, PoseStamped, Twist
 
 publisherr = rospy.Publisher('/cmd_vel', Twist, queue_size=1)
 rospy.sleep(2)
-twist = Twist()
+#twist = Twist()
 dt = 0.06
 N = 1  # Number of robots
 x = np.zeros((3, N))
