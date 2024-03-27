@@ -298,6 +298,20 @@ def create_single_integrator_barrier_certificate(barrier_gain=100, safety_radius
 
                 count += 1
 
+        global limo_curr, limodxi
+        for i in range(4):
+            limoerror = np.array([ [limo_curr[0] + limodxi[0,0]], [limo_curr[1] + limodxi[1,0]] ])
+            limoerror = limoerror.flatten()
+            error = x[:, i] - limoerror
+            h = (error[0] * error[0] + error[1] * error[1]) - np.power(0.5, 2)
+            A[count, (2 * i, (2 * i + 1))] = -2 * error
+
+            b[count] = barrier_gain * np.power(h, 3)
+            count += 1
+
+        
+        
+
         # Threshold control inputs before QP
         norms = np.linalg.norm(dxi, 2, 0)
         idxs_to_normalize = (norms > magnitude_limit)
