@@ -1,4 +1,4 @@
- # warehouse-automation-cbf-shared-control
+ # Warehouse Automation Simulation Live Demo for Honeywell
 
 ![demo](https://github.com/user-attachments/assets/adee171a-effe-47e0-a881-a4985c7b15a2)
 
