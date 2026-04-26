@@ -3,7 +3,7 @@
 ## 📌 Overview
 This repository contains the implementation of a ROS-based multi-robot safe control framework using Control Barrier Functions (CBFs) designed for dynamic warehouse environments. The framework guarantees real-time collision avoidance for autonomous mobile robots alongside unpredictable human controlled agents.
 
-### Key Features
+## ✨ Key Features
 * **Human-in-the-Loop Interaction:** Safely adapted to the unpredictable movements of a human-driven robot.
 * **Sim-to-Real Deployment:** Bridged the simulation gap by developing the ROS-based architecture on physical mobile robots.
 * **Industry Validation:** Demonstrated live for Honeywell in a physical, simulated warehouse setting, proving my framework's reliability in a practical industrial use case.
